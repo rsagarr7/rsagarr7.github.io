@@ -3,13 +3,14 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #222;
   background-color: #5f5f9e;
   background-image: url("background.jpg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  min-height: 100vh;
 }
 
 header {
@@ -31,14 +32,15 @@ main { max-width: 900px; margin: 0 auto; padding: 20px; }
 
 section {
   margin: 30px 0;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   padding: 20px;
   border-radius: 8px;
 }
+
 h2 { color: #0b5cab; margin-bottom: 10px; }
 
 .hero {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
   padding: 50px 20px;
   text-align: center;
 }
@@ -50,14 +52,32 @@ h2 { color: #0b5cab; margin-bottom: 10px; }
 }
 .card {
   flex: 1 1 200px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.social {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.social a {
+  color: #0b5cab;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  transition: transform 0.2s, color 0.2s;
+}
+.social a:hover {
+  transform: scale(1.15);
+  color: #e1306c;
+}
+
 footer {
-  background: rgba(34, 34, 34, 0.9);
+  background: rgba(34, 34, 34, 0.7);
   color: #fff;
   text-align: center;
   padding: 15px;
